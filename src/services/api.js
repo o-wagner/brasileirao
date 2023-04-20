@@ -4,7 +4,7 @@ const api = axios.create({
     baseURL: 'https://api.api-futebol.com.br/v1/',
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + import.meta.env.VITE_TESTE_KEY
+        'Authorization': 'Bearer ' + import.meta.env.VITE_LIVE_KEY
     }
 });
 
