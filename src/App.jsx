@@ -50,11 +50,16 @@ function App() {
             </thead>
             <tbody>
               {brasileirao.map((time, index) => (
-                <tr>
+                <tr
+                  key={index}
+                  className={`${index % 2 === 0 ? "odd" : "even"}`}
+                >
+                  <td>
+                      <img src={time.time.escudo} alt={time.nome} width={30} height={30}></img>
+                  </td>
                   <td>{time.posicao}</td>
-                  <td><img src={time.time.escudo} alt={time.nome} width={30} height={30}></img></td>
                   <td className="txtLeft">{time.time.nome_popular}</td>
-                  <td>{time.pontos}</td>                
+                  <td>{time.pontos}</td>
                   <td>{time.jogos}</td>
                   <td>{time.vitorias}</td>
                   <td>{time.empates}</td>

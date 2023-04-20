@@ -79,3 +79,18 @@ th{
   text-align: center;
   border-bottom: 1 solid #ddd;
 }
+
+tr.odd{
+  background-color: #eeeeee;
+}
+
+tr.even{
+  background-color: #ffffff;
+}
+
+td{
+  text-align: center;
+  padding: 4px;
+  border-bottom: 1px solid #ddd;
+
+}
